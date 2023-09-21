@@ -1,7 +1,8 @@
 name: sendbird_notification_handler
 description: A handler to be able to get sendbird notifications for IOS and Anrdoid
 version: 0.0.1
-homepage:
+homepage: https://github.com/JAOOOOO/sendbird_notifications_handler
+repository: https://github.com/JAOOOOO/sendbird_notifications_handler
 
 environment:
   sdk: '>=3.1.0 <4.0.0'

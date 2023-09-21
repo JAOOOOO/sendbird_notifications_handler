@@ -15,8 +15,6 @@ import 'sendbird_notification_handler_test.mocks.dart';
 ])
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  final SendbirdNotificationHandlerPlatform initialPlatform =
-      SendbirdNotificationHandlerPlatform.instance;
   final mockPlatform = MockSendbirdNotificationHandlerPlatform();
   SendbirdNotificationHandlerPlatform.instance = mockPlatform;
   final mockBirdMessage = MockBirdMessage();

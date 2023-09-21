@@ -26,7 +26,6 @@ class MethodChannelSendbirdNotificationHandler
   MethodChannelSendbirdNotificationHandler() {
     eventChannel.receiveBroadcastStream().listen((event) {
       final Map<String, dynamic> map = jsonDecode(event as String);
-      print('event: $map');
       if (map.containsKey('inactive')) {
         _onMessageController.add(_handleMessage(map['inactive']));
       } else if (map.containsKey('active')) {
